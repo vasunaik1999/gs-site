@@ -141,19 +141,18 @@
             <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    @if($events)
-                    @foreach($events as $event)
+                    @for($i = 0; $i < 1; $i++)
                     <div class="carousel-item active">
                         <div class="card mx-5 mb-2" style="width: 20rem">
-                            <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
-                                alt="Event poster" />
-                            <div class="card-body">
-                                <p class="card-text">{{$event->title}}</p>
-                            </div>
+                            <!-- <img src="{{ asset('images/events/'. $events[$i]['e_image'])}}" class="card-img-top"
+                                alt="Event poster" /> -->
+                            <!-- <div class="card-body">
+                                <p class="card-text">{{$events[$i]['title']}}</p>
+                            </div> -->
                         </div>
                     </div>
-                    @endforeach
-                    @endif
+                    @endfor
+                   
                 </div>
             </div>
             <button data-aos-duration="1000" data-aos="zoom-in" class="btn btn-primary events__button">View All</button>
