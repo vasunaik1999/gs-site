@@ -1,0 +1,164 @@
+#mainheading {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+
+
+/* ------------Navbar------------------------ */
+
+nav {
+    background-color: black;
+    width: 100%;
+    padding: 0 5vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav .nav-item a:hover {
+    color: #43A5FF !important;
+    border-bottom: 2px solid #43A5FF !important;
+}
+
+
+/*---------------Navbar end-------------------*/
+
+#eventshead {
+    left: 129px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: capitalize;
+    color: #1890FF;
+}
+
+#game {
+    font-family: Poppins, sans-serif;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 25px;
+    box-align: center;
+    letter-spacing: 0.01em;
+}
+
+#eventdiv {
+    background: #FFFFFF;
+    box-shadow: 1px 4px 20px rgba(67, 165, 255, 0.15);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#rslinks {
+    font-weight: bold;
+}
+
+
+/* .row.details.hidden {
+    display: none;
+} */
+
+
+/*------Load More Button-------*/
+
+#loadMore {
+    bottom: 0px;
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #1890FF;
+    transition: .3s;
+}
+
+#loadMore:hover {
+    color: #1890FF;
+    background-color: #fff;
+    border: 1px solid #1890FF;
+    text-decoration: none;
+}
+
+
+/*Load More Button End-------*/
+
+#ytlink {
+    color: #ffffff;
+}
+
+.btn-primary {
+    color: #43A5FF;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    height: fit-content;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-text {
+    font-family: Poppins;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.socials {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .footer-text {
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        order: 2 !important;
+    }
+    .social-icons {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        order: 1 !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container {
+        padding: 20px 40px;
+    }
+}
+
+
+/*------footer end-------*/

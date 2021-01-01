@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+/* ------------Navbar------------------------ */
+nav {
+  background-color: black;
+  width: 100%;
+  padding: 0 5vw;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+nav .nav-item a:hover {
+  color: #43a5ff !important;
+  border-bottom: 2px solid #43a5ff !important;
+}
+/*---------------Navbar end-------------------*/
+
+/*-------------Global Styling---------------*/
+.page-title {
+  margin-top: 4.5rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  color: #43a5ff;
+  margin-top: 3rem;
+}
+hr {
+  margin: 0.5rem auto;
+  width: 13.7rem;
+}
+.name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: -1%;
+}
+.designation {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #43a5ff;
+}
+a img {
+  border-radius: 50%;
+}
+a img:hover {
+  box-shadow: 0 0 20px #43a5ff;
+}
+/*---------------Global Styling End--------------*/
+
+/*----------------------Regional head card section----------------*/
+.regional-head-card {
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  width: 88%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 15px rgba(67, 165, 255, 0.25);
+  border-radius: 4px;
+}
+.rh-content {
+  margin-left: 3.1rem;
+  width: 60%;
+  height: auto;
+  text-align: left;
+}
+.rh-content hr {
+  width: 40vw;
+  margin-left: 0;
+}
+.rh-content .message {
+  font-size: 0.9rem;
+  color: #8090bd;
+}
+.social-icons {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+}
+
+/*------------------Regional, Campus Heores and Bits Chapter Team------------------------*/
+.team-container {
+  width: 89%;
+  margin: auto;
+}
+.imgc {
+  position: relative;
+  top: 2rem;
+  margin: auto;
+  height: 9.25rem;
+  width: 9.25rem;
+  border-radius: 50%;
+}
+.content {
+  margin-top: 3rem;
+}
+.team-member {
+  margin: 0.5rem 0.5rem;
+  width: 96%;
+  padding-bottom: 1rem;
+  box-shadow: 1px 4px 15px rgba(67, 165, 255, 0.25);
+  border-radius: 4px;
+}
+.team-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem auto 2rem auto;
+}
+
+/*------------------Regional, Campus Heores and Bits Chapter Team end------------------------*/
+
+/*---------------------Chapter Lead Container-----------------*/
+.leads {
+  display: flex;
+}
+.lead1,
+.lead2 {
+  padding: 2rem 0;
+  width: 38.07vw;
+  height: 20.87rem;
+  margin: 1rem auto;
+  box-shadow: 1px 4px 15px rgba(67, 165, 255, 0.25);
+  border-radius: 4px;
+}
+.leads-icons {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0 auto;
+}
+.carousel-indicators li {
+  background-color: gray;
+  position: relative;
+  top: 3rem;
+}
+/*--------------------Chapter Lead Container End----------------*/
+
+/*-----------------------Web dev Team---------------------------------------*/
+.web-dev {
+  width: 89%;
+  height: auto;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  box-shadow: 1px 4px 15px rgba(67, 165, 255, 0.25);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 3rem;
+}
+.web-dev-member {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.web-dev-member .name {
+  line-height: 2.5vh;
+  margin-bottom: 0.5rem;
+}
+.wd-image img {
+  height: 8.75rem;
+  width: 8.75rem;
+}
+.web-dev-member hr {
+  width: 90%;
+}
+.mili {
+  margin-left: -3rem;
+}
+/*--------------------Web dev team end-----------------------*/
+
+/*---------------------Work with us------------------------------*/
+.work-with-us-section {
+  width: 100%;
+  height: auto;
+  background-color: #e4f3ff;
+  margin: 3rem 0;
+  padding: 4rem 2rem;
+}
+.wwu-heading {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+.work-with-us-section p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.work-with-us-section button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 8px;
+  background-color: #43a5ff;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.work-with-us-section button:hover {
+  background-color: #2988e0;
+}
+/*---------------------Work with us section end-------------------*/
+
+/*-----------------------Footer----------------------*/
+
+/*---------------Responsive------------------------*/
+@media (max-width: 1100px) {
+  .web-dev-member .name {
+    font-size: 1.3em;
+  }
+  .web-dev {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .leads-icons {
+    width: 8rem;
+  }
+  nav a {
+    font-size: 1em;
+    margin: auto;
+    width: 50%;
+  }
+}
+@media (max-width: 780px) {
+  .designation {
+    font-size: 0.8em;
+  }
+  .wd-image {
+    height: 7em;
+    width: 7em;
+    margin: 0 0.8em 0 0;
+  }
+  .web-dev-member .name {
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+  .web-dev-member hr {
+    width: 70%;
+  }
+}
+@media (max-width: 740px) {
+  .name {
+    font-size: 1.3em;
+    margin-top: 0.5em;
+  }
+  .leads hr {
+    width: 10em;
+  }
+  .leads {
+    flex-direction: column;
+  }
+  .lead1,
+  .lead2 {
+    width: 80vw;
+  }
+  .team-member {
+    margin: 0.5em auto;
+  }
+  .web-dev {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .regional-head-card {
+    flex-direction: column;
+    padding: 1em 1em;
+  }
+  .rh-content {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .rh-content hr {
+    width: 15em;
+    margin: 0.5em auto 1em auto;
+  }
+  .rh-image {
+    margin: 1rem 0;
+    height: 11.5rem;
+    width: 11.5rem;
+  }
+  .social-icons,
+  .wd-icons {
+    margin: auto;
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-icons {
+    width: 8rem;
+  }
+  .work-with-us-section p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 450px) {
+  .wd-image {
+    height: 6.5em;
+    width: 6.5em;
+    margin-right: 3em;
+  }
+  .mili {
+    margin-left: -0.5em;
+  }
+  nav img {
+    width: 10.5em;
+    height: 2.2em;
+  }
+  h2 {
+    font-size: 1.9em;
+  }
+  .wwu-heading {
+    font-size: 2em;
+  }
+  .wwu-content p {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 380px) {
+  .web-dev-member {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .web-dev-member .team-details {
+    margin-top: 3em;
+  }
+  .mili {
+    margin-left: 0;
+  }
+  .page-title,
+  .wwu-heading {
+    font-size: 1.8em;
+  }
+  .wwu-content p {
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .work-with-us-section button {
+    width: 6em;
+    height: 2.5em;
+    font-size: 1em;
+  }
+}
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  height: fit-content;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-text {
+  font-family: Poppins;
+  text-align: center;
+}
+footer .social-icons {
+  display: flex;
+  width: fit-content;
+}
+footer .socials {
+  margin-right: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    display: block;
+    flex-direction: column-reverse;
+  }
+  .footer-text {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    order: 2 !important;
+  }
+  footer .social-icons {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    order: 1 !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    padding: 20px 40px;
+  }
+}

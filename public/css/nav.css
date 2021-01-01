@@ -1,0 +1,142 @@
+
+.navbar-laravel {
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+/* 
+.navbar {
+    display: none;
+} */
+
+
+#sidebarCollapse {
+  color: #abe6fa;
+  background: transparent;
+  outline: none;
+  margin: 0 20px;
+}
+
+#sidebarCollapse:hover {
+    /* color: #2abdfc; */
+  color:blue;
+    background: #fff;
+    outline: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background: whitesmoke;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: max-content;
+  background: blue;
+  color: #fff;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0px;
+}
+
+#sidebar ul li a {
+  padding: 10px 10px 10px 20px;
+  font-size: 18px;
+  
+  display: block;
+  color: #fff;
+}
+
+#sidebar ul li a:hover {
+  color: #070b3b;
+  background: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #070b3b;
+  background: #FFF;
+  color: #111 !important;
+  border-radius: 20px;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#content {
+  width: 100%;
+  padding: 10px;
+  min-height: 100vh;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar.active {
+    margin-left: 0px;
+  }
+
+  #sidebarCollapse span {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  #sidebar {
+    margin-top: -20px;
+  }
+
+  #logo {
+    display: none;
+  }
+}
+
+#ch{
+  background-color: blue;
+  color:#FFF;
+}
+
+
+.thead{
+  background-color: blue;
+  color: #fff;
+}
+
+#social-icon{
+  font-size: 25px;
+  text-decoration: none;
+  margin-left:3px;
+  margin-right:3px;
+}
+
