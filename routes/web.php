@@ -14,9 +14,15 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('client.index');
-});
+// Route::get('/', function () {
+//     return view('client.index');
+// });
+
+//Calling Main Page
+Route::get('/','ClientController@index');
+Route::get('/team','ClientController@team');
+Route::get('/events','ClientController@event');
+
 
 
 Auth::routes([

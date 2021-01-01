@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="./webpages/Team page.html">Team</a>
+                        <a class="nav-link" href="/team">Team</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="/events">Events</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#contact">Contact Us</a>
@@ -96,26 +96,20 @@
         <section class="events">
             <h1 data-aos-duration="1000" data-aos="zoom-in" class="text-center mb-2">Latest Events</h1>
             <div class="event-cards container card-group mb-4">
+                @if($events)
+                @foreach($events as $event)
                 <div data-aos-duration="1000" data-aos="zoom-in" class="card mx-5" style="width: 18rem">
-                    <img src="assets/landing-img/Poster 1.png" class="card-img-top" alt="Event poster" />
+                    <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
+                        alt="{{$event->title}}" />
+                    <!-- <img src="{{ asset('images/events/'. $event->e_image)}}" width="50px"  alt="img"></td> -->
                     <div class="card-body">
-                        <p class="card-text">Game-a-tion</p>
+                        <p class="card-text">{{$event->title}}</p>
                     </div>
                 </div>
-                <div data-aos-duration="1000" data-aos="zoom-in" class="card mx-4" style="width: 18rem">
-                    <img src="assets/landing-img/Poster 2.png" class="card-img-top" alt="Event poster" />
-                    <div class="card-body">
-                        <p class="card-text">Bits and Bytes</p>
-                    </div>
-                </div>
-                <div data-aos-duration="1000" data-aos="zoom-in" class="card mx-5" style="width: 18rem">
-                    <img src="assets/landing-img/Poster 3.png" class="card-img-top" alt="Event poster" />
-                    <div class="card-body">
-                        <p class="card-text">Blockchain Technology</p>
-                    </div>
-                </div>
+                @endforeach
+                @endif
             </div>
-            <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
+            <!-- <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -142,6 +136,24 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div> -->
+            <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @if($events)
+                    @foreach($events as $event)
+                    <div class="carousel-item active">
+                        <div class="card mx-5 mb-2" style="width: 20rem">
+                            <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
+                                alt="Event poster" />
+                            <div class="card-body">
+                                <p class="card-text">{{$event->title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    @endif
                 </div>
             </div>
             <button data-aos-duration="1000" data-aos="zoom-in" class="btn btn-primary events__button">View All</button>
@@ -374,7 +386,7 @@
                     <img data-aos-duration="1000" data-aos="zoom-in" src="assets/landing-img/contact.png" />
                 </div>
                 <form action="/submit-query" method="post">
-                @csrf
+                    @csrf
                     <div class="contact-second">
                         <input data-aos-duration="1000" data-aos="fade-up" type="text" name="name"
                             placeholder="Full Name" class="form-input" />

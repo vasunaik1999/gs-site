@@ -14,7 +14,7 @@ class QueryController extends Controller
      */
     public function index()
     {
-        $queries = Query::all();
+        $queries = Query::all()->reverse();
         return view('admin.queries.display_queries',compact('queries'));
     }
 
