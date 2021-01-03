@@ -94,9 +94,9 @@
 
         <!-- Latest Events Section -->
         <section class="events">
+            @if($events)
             <h1 data-aos-duration="1000" data-aos="zoom-in" class="text-center mb-2">Latest Events</h1>
             <div class="event-cards container card-group mb-4">
-                @if($events)
                 @foreach($events as $event)
                 <div data-aos-duration="1000" data-aos="zoom-in" class="card mx-5" style="width: 18rem">
                     <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
@@ -107,7 +107,6 @@
                     </div>
                 </div>
                 @endforeach
-                @endif
             </div>
             <!-- <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
@@ -138,10 +137,12 @@
                     </div>
                 </div>
             </div> -->
+
             <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    @foreach($events as $event)
+                    <div class="carousel-item @if($loop->first) active @endif">
                         <div class="card mx-5 mb-2" style="width: 20rem">
                             <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
                                 alt="Event poster" />
@@ -150,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-
+                    @endforeach
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -158,6 +159,7 @@
                     <a data-aos-duration="1000" data-aos="zoom-in" href="/events" class="btn btn-primary">View All</a>
                 </div>
             </div>
+            @endif
         </section>
 
         <!-- Statistics Section -->
