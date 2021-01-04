@@ -94,9 +94,9 @@
 
         <!-- Latest Events Section -->
         <section class="events">
+            @if($events)
             <h1 data-aos-duration="1000" data-aos="zoom-in" class="text-center mb-2">Latest Events</h1>
             <div class="event-cards container card-group mb-4">
-                @if($events)
                 @foreach($events as $event)
                 <div data-aos-duration="1000" data-aos="zoom-in" class="card mx-5" style="width: 18rem">
                     <img src="{{ asset('images/events/'. $event->e_image)}}" class="card-img-top"
@@ -106,10 +106,42 @@
                     </div>
                 </div>
                 @endforeach
-                @endif
             </div>
+<<<<<<< HEAD
             <!-- End of Latest Event Section -->
             <!-- Latest Events for Mobile Responsive  -->
+=======
+            <!-- <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-5" style="width: 20rem">
+                            <img src="assets/landing-img/Poster 1.png" class="card-img-top" alt="Event poster" />
+                            <div class="card-body">
+                                <p class="card-text">Game-a-tion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-5" style="width: 20rem">
+                            <img src="assets/landing-img/Poster 2.png" class="card-img-top" alt="Event poster" />
+                            <div class="card-body">
+                                <p class="card-text">Bits and Bytes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-5" style="width: 20rem">
+                            <img src="assets/landing-img/Poster 3.png" class="card-img-top" alt="Event poster" />
+                            <div class="card-body">
+                                <p class="card-text">Blockchain Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+>>>>>>> 8c6f81ca33ee15e10f0cc4bcb4263341414b8e98
             <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -131,6 +163,7 @@
                     <a data-aos-duration="1000" data-aos="zoom-in" href="/events" class="btn btn-primary">View All</a>
                 </div>
             </div>
+            @endif
         </section>
 
         <!-- Statistics Section -->
