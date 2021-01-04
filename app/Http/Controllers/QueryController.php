@@ -48,7 +48,7 @@ class QueryController extends Controller
         //dd($data);
 
         Query::create($data);
-        return redirect()->back()->with('message','Submitted Successfully!');
+        return redirect()->back()->with('formmessage','Submitted Successfully!');
 
     }
 

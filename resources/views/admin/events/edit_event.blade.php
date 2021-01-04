@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-12 form-group">
                         <label for="description">Description</label>
-                        <textarea name="description" class="form-control" id="description" rows="5"
+                        <textarea name="description" class="form-control" id="description_summer" rows="5"
                             placeholder="Enter Description...">{{$event->description}}</textarea>
                     </div>
                 </div>
@@ -74,4 +74,14 @@
 </div>
 
 
+@endsection
+
+@section('scripts')
+<script>
+      $('#description_summer').summernote({
+        placeholder: 'Enter Description',
+        tabsize: 2,
+        height: 100
+      });
+    </script>
 @endsection

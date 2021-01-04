@@ -978,9 +978,9 @@
                 <p data-aos-duration="1000" data-aos="fade-up">
                     Help us to support the people and students in tech
                 </p>
-                <button data-aos-duration="1000" data-aos="fade-up" type="submit">
+                <a data-aos-duration="1000" class="btn btn-primary" href="http://bit.ly/hiremeGS" data-aos="fade-up" type="submit">
                     JOIN US
-                </button>
+                </a>
             </div>
         </section>
 
@@ -993,16 +993,27 @@
                 </div>
                 <div class="social-icons">
                     <div class="socials linkedin">
-                        <img src="../assets/socials svg/LinkedIn.svg" alt="" />
+                        <a href="https://www.linkedin.com/company/girlscriptgoa/"><img src="../assets/socials svg/LinkedIn.svg" alt="Linked In"/></a>
                     </div>
                     <div class="socials instagram">
-                        <img src="../assets/socials svg/Instagram.svg" alt="" />
+                        <a href="https://www.instagram.com/girlscriptgoa/">
+                            <img src="../assets/socials svg/Instagram.svg" alt="" />
+                        </a>
                     </div>
                     <div class="socials twitter">
-                        <img src="../assets/socials svg/Twitter.svg" alt="" />
+                        <a href="https://twitter.com/girlscriptgoa">
+                            <img src="../assets/socials svg/Twitter.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="socials facebook">
+                        <a href="https://www.facebook.com/girlscriptgoa-106623521174035">
+                            <img src="../assets/socials svg/facebook.png" alt="" />
+                        </a>
                     </div>
                     <div class="socials mail">
-                        <img src="../assets/socials svg/Mail.svg" alt="" />
+                        <a href="mailto:girlscriptgoa@gmail.com">
+                            <img src="../assets/socials svg/Mail.svg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>

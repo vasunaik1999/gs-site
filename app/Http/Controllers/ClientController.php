@@ -10,9 +10,9 @@ class ClientController extends Controller
 {
 
     public function index(){
-        $events = Event::where('is_published','1')->get()->reverse()->take(3);
+        $events = Event::where('is_published','1')->where('status','!=','Cancelled')->get()->reverse()->take(3);
         // $events = Event::get()->reverse()->take(3);
-        // //dd($events);
+        //dd($events);
         return view('client.index',compact('events'));
     }
     
@@ -23,11 +23,13 @@ class ClientController extends Controller
     
     public function event()
     {
-        $events = Event::where('is_published','1')->get()->reverse();
+        // $events = Event::where('is_published','1')->get()->reverse();
         // dd($events);
-        $ongoings = Event::where('status','Ongoing')->get();
-       //dd($ongoings);
-        return view('client.events',compact('events','ongoings'));
+        $ongoings = Event::where('status','Ongoing')->where('is_published','1')->get();
+        $upcomings = Event::where('status','Upcoming')->where('is_published','1')->get();
+        $pasts = Event::where('status','Completed')->where('is_published','1')->get();
+        //dd($ongoings);
+        return view('client.events',compact('upcomings','ongoings','pasts'));
     }
 
 }

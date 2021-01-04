@@ -41,8 +41,7 @@
                 <div class="row">
                     <div class="col-12 form-group">
                         <label for="description">Description</label>
-                        <textarea name="description" class="form-control" id="description"
-                            placeholder="Enter Description..."></textarea>
+                        <textarea name="description" class="form-control" id="description" rows="2">hbbhbhbj</textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -74,7 +73,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($events as  $key => $event)
+                        @foreach($events as $key => $event)
                         <tr>
                             <th>{{$key+1}}</th>
                             <td>{{$event->title}}</td>
@@ -82,15 +81,17 @@
                             <td>{{$event->status}}
                                 <br>
                                 @if($event->is_published == 0)
-                                    <span class="badge badge-danger">Not Published</span>
+                                <span class="badge badge-danger">Not Published</span>
                                 @else
-                                    <span class="badge badge-success">Published</span>
+                                <span class="badge badge-success">Published</span>
                                 @endif
                             </td>
-                            <td><img src="{{ asset('images/events/'. $event->e_image)}}" width="50px"  alt="img"></td>
+                            <td><img src="{{ asset('images/events/'. $event->e_image)}}" width="50px" alt="img"></td>
                             <td>
-                               <a href="/edit-event/{{$event->id}}" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Edit this Event">Edit</a>
-                               <a href="/delete-event/{{$event->id}}" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Delete this Event">Delete</a>
+                                <a href="/edit-event/{{$event->id}}" class="btn btn-primary btn-sm"
+                                    data-toggle="tooltip" data-placement="top" title="Edit this Event">Edit</a>
+                                <a href="/delete-event/{{$event->id}}" class="btn btn-danger btn-sm"
+                                    data-toggle="tooltip" data-placement="top" title="Delete this Event">Delete</a>
                             </td>
                         </tr>
                         @endforeach
@@ -100,13 +101,13 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 @section('scripts')
 <script>
-//Summernote
 $('#description').summernote({
-    placeholder: 'Enter Event Description',
+    placeholder: 'Enter Description',
     tabsize: 2,
     height: 100
 });

@@ -10,6 +10,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('HHHH', 'Laravel') }}</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,6 +24,7 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
+       
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css')}}" rel="stylesheet">
@@ -26,8 +32,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"
         type="text/css">
 
-     <!--Summer Note-->
-     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 
 
 </head>
@@ -49,9 +58,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
-                        <button id="sidebarCollapse" class="btn navbar-btn">
-                            <i class="fas fa-bars"></i>
-                        </button>
+                            <button id="sidebarCollapse" class="btn navbar-btn">
+                                <i class="fas fa-bars"></i>
+                            </button>
                         @endauth
 
                     </ul>
@@ -105,21 +114,12 @@
             @endauth
         </main>
     </div>
-    <script>
-    $(document).ready(function() {
-        $('#sidebarCollapse').on('click', function() {
-            $('#sidebar, #content').toggleClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-    });
-    </script>
 
- 
-    <!-- Summer Note -->
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 
-    @yield('scripts')
+
+
+
+@yield('scripts')
 
 </body>
 

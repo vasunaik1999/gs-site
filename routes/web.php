@@ -25,6 +25,7 @@ Route::get('/events','ClientController@event');
 
 
 
+
 Auth::routes([
     'register' => false
 ]);
@@ -61,7 +62,13 @@ Route::group(['middleware' => 'auth'], function () {
     //Delete Query
     Route::get('delete-query/{query}','QueryController@delete');
 
+    //--------------------
+    //Subscriptions
+    //Display Subscriptions
+    Route::get('subscriptions','SubscriptionController@index');
+
 
 });
 
 Route::post('/submit-query','QueryController@store');
+Route::post('/subscription','SubscriptionController@store');
