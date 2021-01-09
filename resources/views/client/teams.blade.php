@@ -57,12 +57,6 @@
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="/events">Events</a>
                         </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#footer">Contact Us</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -460,7 +454,7 @@
                     </div>
                     <div class="team-details">
                         <p class="name">Rushabh Wadkar</p>
-                        <span class="designation">Web development Team Lead</span>
+                        <span class="designation">Web-Dev Team Lead</span>
                         <hr />
                         <div class="wd-icons">
                             <a href="https://www.linkedin.com/in/wadkar-rushabh/"><img
@@ -474,11 +468,28 @@
                 </div>
                 <div data-aos-duration="1000" data-aos="fade-up" class="web-dev-member">
                     <div class="wd-image">
+                        <img src="../assets/Team/VasuNaik1.png" alt="Jade Lourdez Vaz" class="team-image" />
+                    </div>
+                    <div class="team-details">
+                        <p class="name">Vasu Naik</p>
+                        <span class="designation">Backend Developer</span>
+                        <hr />
+                        <div class="wd-icons">
+                            <a href="https://www.linkedin.com/in/vasu-naik-b6a9a7181"><img
+                                    src="../assets/Social Media/LinkedIn.svg" alt="LinkedIn" /></a>
+                            <a href="https://twitter.com/vasunaik1999"><img src="../assets/Social Media/Twitter.svg" alt="Twitter" /></a>
+                            <a href="https://www.instagram.com/vasunaik_1999/"><img
+                                    src="../assets/Social Media/Instagram.svg" alt="Instagram" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos-duration="1000" data-aos="fade-up" class="web-dev-member">
+                    <div class="wd-image">
                         <img src="../assets/Team/Devraj Chatribin.png" alt="Devraj Chatribin" class="team-image" />
                     </div>
                     <div class="team-details">
                         <p class="name">Devraj Chatribin</p>
-                        <span class="designation">Web Developer</span>
+                        <span class="designation">Frontend Developer</span>
                         <hr />
                         <div class="wd-icons">
                             <a href="https://www.linkedin.com/in/devraj-chatribin/"><img
@@ -495,7 +506,7 @@
                     </div>
                     <div class="team-details">
                         <p class="name">Tejasi Mangale</p>
-                        <span class="designation">Web Developer</span>
+                        <span class="designation">Frontend Developer</span>
                         <hr />
                         <div class="wd-icons">
                             <a href="https://www.linkedin.com/in/tejasi-mangale-15a0821a9/"><img
@@ -513,7 +524,7 @@
                     </div>
                     <div class="team-details">
                         <p class="name">Mili Doshi</p>
-                        <span class="designation">Web Developer</span>
+                        <span class="designation">Frontend Developer</span>
                         <hr />
                         <div class="wd-icons">
                             <a href="https://www.linkedin.com/in/mili-doshi/"><img
@@ -536,23 +547,6 @@
                                     src="../assets/Social Media/LinkedIn.svg" alt="LinkedIn" /></a>
                             <a href="#"><img src="../assets/Social Media/Twitter.svg" alt="Twitter" /></a>
                             <a href="#"><img src="../assets/Social Media/Instagram.svg" alt="Instagram" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos-duration="1000" data-aos="fade-up" class="web-dev-member">
-                    <div class="wd-image">
-                        <img src="../assets/Team/Jade Vaz.png" alt="Jade Lourdez Vaz" class="team-image" />
-                    </div>
-                    <div class="team-details">
-                        <p class="name">Jade Lourdez Vaz</p>
-                        <span class="designation">Content Writer</span>
-                        <hr />
-                        <div class="wd-icons">
-                            <a href="https://www.linkedin.com/in/jade-lourdes-vaz-a6a6b31b4/"><img
-                                    src="../assets/Social Media/LinkedIn.svg" alt="LinkedIn" /></a>
-                            <a href="#"><img src="../assets/Social Media/Twitter.svg" alt="Twitter" /></a>
-                            <a href="https://www.instagram.com/jade__vaz"><img
-                                    src="../assets/Social Media/Instagram.svg" alt="Instagram" /></a>
                         </div>
                     </div>
                 </div>
