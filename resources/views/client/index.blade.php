@@ -107,41 +107,8 @@
                 </div>
                 @endforeach
             </div>
-<<<<<<< HEAD
             <!-- End of Latest Event Section -->
             <!-- Latest Events for Mobile Responsive  -->
-=======
-            <!-- <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card mx-5" style="width: 20rem">
-                            <img src="assets/landing-img/Poster 1.png" class="card-img-top" alt="Event poster" />
-                            <div class="card-body">
-                                <p class="card-text">Game-a-tion</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card mx-5" style="width: 20rem">
-                            <img src="assets/landing-img/Poster 2.png" class="card-img-top" alt="Event poster" />
-                            <div class="card-body">
-                                <p class="card-text">Bits and Bytes</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card mx-5" style="width: 20rem">
-                            <img src="assets/landing-img/Poster 3.png" class="card-img-top" alt="Event poster" />
-                            <div class="card-body">
-                                <p class="card-text">Blockchain Technology</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
->>>>>>> 8c6f81ca33ee15e10f0cc4bcb4263341414b8e98
             <div data-aos-duration="1000" data-aos="zoom-in" id="carouselExampleIndicators" class="carousel slide mb-4"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -472,11 +439,11 @@
     <script>
     AOS.init();
     </script>
+    <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>

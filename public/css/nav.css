@@ -54,7 +54,7 @@
 #sidebar ul li a {
   padding: 10px 10px 10px 20px;
   font-size: 18px;
-  
+  text-decoration: none;
   display: block;
   color: #fff;
 }

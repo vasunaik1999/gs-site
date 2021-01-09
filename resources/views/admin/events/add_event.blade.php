@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+    <title>Girl Script | Events</title>
+@endsection
 @section('content')
 <div class="container-fluid">
     <div class="card shadow-sm">
@@ -41,7 +44,31 @@
                 <div class="row">
                     <div class="col-12 form-group">
                         <label for="description">Description</label>
-                        <textarea name="description" class="form-control" id="description" rows="2">hbbhbhbj</textarea>
+                        <textarea name="description" class="form-control" id="description" rows="5"
+                            placeholder="Enter Event Descrption..."></textarea>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                <div class="col-md-12">
+                    <p><em><small><b>Note:</b> Enter Full Link, https://www.example.com</small></em></p>
+                </div>
+                    <div class="col-md-5 form-group">
+                        <label for="reg_link">Registration Link</label>
+                        <input type="text" name="reg_link" class="form-control" id="reg_link"
+                            placeholder="Enter Registration Link...">
+                    </div>
+                    <div class="col-md-5 form-group">
+                        <label for="yt_link">YouTube Link</label>
+                        <input type="text" name="yt_link" class="form-control" id="yt_link"
+                            placeholder="Enter YouTube Link...">
+                    </div>
+                    <div class="col-md-2 form-group">
+                        <label for="link_status">Link Status :</label>
+                        <select name="link_status" id="link_status" class="form-select">
+                            <option value="1">Publish</option>
+                            <option value="0">Don't Publish</option>
+                        </select>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -105,11 +132,4 @@
 @endsection
 
 @section('scripts')
-<script>
-$('#description').summernote({
-    placeholder: 'Enter Description',
-    tabsize: 2,
-    height: 100
-});
-</script>
 @endsection

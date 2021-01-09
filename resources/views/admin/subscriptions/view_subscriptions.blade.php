@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+    <title>Girl Script | Subscriptions</title>
+@endsection
 @section('content')
 <!-- Display -->
 <div class="container-fluid mt-4">

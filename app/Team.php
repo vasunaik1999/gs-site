@@ -12,5 +12,5 @@ class Team extends Model
 
     protected $dates = ['deleted_at'];
     protected $table = 'teams';
-    protected $fillable =['name','section_title','role','image','status','linkedin','twitter','insta'];
+    protected $fillable =['name','section_title','subsection','role','image','status','linkedin','twitter','insta'];
 }

@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+    <title>Girl Script | Edit Team Member</title>
+@endsection
 @section('content')
 <div class="container-fluid">
     <div class="card shadow-sm">
@@ -39,8 +42,9 @@
                             </div>
                         </div>
                     </div>
-               
-                    <div class="offset-2 col-md-4">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-4">
                             <img src="{{ asset('images/team/'. $team->image)}}" height="150px" alt="img">
                     </div>
                 </div>
@@ -58,7 +62,7 @@
                     </div>
                     <div class="col-md-4 form-group">
                         <label for="status">status :</label>
-                        <select name="status" id="status" class="form-control">
+                        <select name="status" id="status" class="form-select">
                             <option value="1" @if($team->status == 1) selected @endif>Published</option>
                             <option value="0" @if($team->status == 0) selected @endif> Not Published</option>
                         </select>

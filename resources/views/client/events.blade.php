@@ -12,6 +12,7 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
 
+
     <script src="{{ asset('js/load-more.js')}}"></script>
 </head>
 
@@ -89,6 +90,9 @@
                                 <h5 id="title">{{$ongoing->description}}</h5>
                             </div>
                             <div class="modal-footer">
+                                @if($ongoing->link_status == 1)
+                                    <a class="btn btn-primary">Registration Closed</a>
+                                @endif
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
@@ -137,6 +141,9 @@
                                 <h5 id="title">{{$upcoming->description}}</h5>
                             </div>
                             <div class="modal-footer">
+                                @if($upcoming->link_status == 1)
+                                    <a href="{{ url($upcoming->reg_link) }}" class="btn btn-primary">Register Now</a>
+                                @endif
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
@@ -185,6 +192,9 @@
                                 <h5 id="title">{{$past->description}}</h5>
                             </div>
                             <div class="modal-footer">
+                                @if($past->link_status == 1)
+                                    <a href="{{$past->yt_link}}" class="btn btn-primary">Watch on YouTube</a>
+                                @endif
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>

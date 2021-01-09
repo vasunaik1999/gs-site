@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+    <title>Girl Script | Team</title>
+@endsection
 @section('content')
 <div class="container-fluid">
     <div class="card shadow-sm">

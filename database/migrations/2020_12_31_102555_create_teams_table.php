@@ -17,6 +17,7 @@ class CreateTeamsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('section_title');
+            $table->string('subsection')->nullable();
             $table->string('role');
             $table->string('image');
             $table->boolean('status')->default(0);

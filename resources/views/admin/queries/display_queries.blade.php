@@ -1,7 +1,8 @@
 @extends('layouts.app')
+@section('title')
+    <title>Girl Script | Queries</title>
+@endsection
 @section('content')
-
-
 <!-- Display -->
 <div class="container-fluid mt-2">
     <div class="card shadow-sm">

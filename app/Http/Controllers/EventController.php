@@ -34,6 +34,9 @@ class EventController extends Controller
         $event->description = $request->input('description');
         $event->is_published = $request->input('is_published');
         $event->status = $request->input('status');
+        $event->reg_link = $request->input('reg_link');
+        $event->yt_link = $request->input('yt_link');
+        $event->link_status = $request->input('link_status');
 
         if($request->hasfile('e_image')){
             $file = $request->file('e_image');
@@ -67,13 +70,15 @@ class EventController extends Controller
             'title' => 'required',
             'description' => 'required',
             'is_published' => 'required',
-            'status' => 'required'
+            'status' => 'required',
         ]);
-        
         $event->title = $request->input('title');
         $event->description = $request->input('description');
         $event->is_published = $request->input('is_published');
         $event->status = $request->input('status');
+        $event->reg_link = $request->input('reg_link');
+        $event->yt_link = $request->input('yt_link');
+        $event->link_status = $request->input('link_status');
 
         if($request->hasfile('e_image')){
             $file = $request->file('e_image');
