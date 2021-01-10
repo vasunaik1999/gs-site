@@ -349,11 +349,11 @@
                 </form>
             </div>
 
-                @if(session()->has('message'))
-                <div class="alert alert-success mt-3">
-                    {{ session()->get('message') }}
-                </div>
-                @endif
+            @if(session()->has('message'))
+            <div class="alert alert-success mt-3">
+                {{ session()->get('message') }}
+            </div>
+            @endif
         </section>
 
         <!-- Contact Section -->
@@ -382,21 +382,21 @@
                     </div>
                 </form>
             </div>
-                @if ($errors->any())
-                <div class="alert alert-danger mt-3">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
+            @if ($errors->any())
+            <div class="alert alert-danger mt-3">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
 
-                @if(session()->has('formmessage'))
-                <div class="alert alert-success mt-3">
-                    {{ session()->get('formmessage') }}
-                </div>
-                @endif
+            @if(session()->has('formmessage'))
+            <div class="alert alert-success mt-3">
+                {{ session()->get('formmessage') }}
+            </div>
+            @endif
         </section>
     </main>
 
@@ -404,29 +404,30 @@
         <div class="footer-container">
             <div class="footer-text">Copyright © 2020, made with ❤️ by GirlScript Goa.</div>
             <div class="social-icons">
-            <div class="socials linkedin">
-                        <a href="https://www.linkedin.com/company/girlscriptgoa/"><img src="../assets/socials svg/LinkedIn.svg" alt="Linked In"/></a>
-                    </div>
-                    <div class="socials instagram">
-                        <a href="https://www.instagram.com/girlscriptgoa/">
-                            <img src="../assets/socials svg/Instagram.svg" alt="" />
-                        </a>
-                    </div>
-                    <div class="socials twitter">
-                        <a href="https://twitter.com/girlscriptgoa">
-                            <img src="../assets/socials svg/Twitter.svg" alt="" />
-                        </a>
-                    </div>
-                    <div class="socials facebook">
-                        <a href="https://www.facebook.com/girlscriptgoa-106623521174035">
-                            <img src="../assets/socials svg/facebook.png" alt="" />
-                        </a>
-                    </div>
-                    <div class="socials mail">
-                        <a href="mailto:girlscriptgoa@gmail.com">
-                            <img src="../assets/socials svg/Mail.svg" alt="" />
-                        </a>
-                    </div>
+                <div class="socials linkedin">
+                    <a href="https://www.linkedin.com/company/girlscriptgoa/"><img
+                            src="../assets/socials svg/LinkedIn.svg" alt="Linked In" /></a>
+                </div>
+                <div class="socials instagram">
+                    <a href="https://www.instagram.com/girlscriptgoa/">
+                        <img src="../assets/socials svg/Instagram.svg" alt="" />
+                    </a>
+                </div>
+                <div class="socials twitter">
+                    <a href="https://twitter.com/girlscriptgoa">
+                        <img src="../assets/socials svg/Twitter.svg" alt="" />
+                    </a>
+                </div>
+                <div class="socials facebook">
+                    <a href="https://www.facebook.com/girlscriptgoa-106623521174035">
+                        <img src="../assets/socials svg/facebook icon.svg" alt="" />
+                    </a>
+                </div>
+                <div class="socials mail">
+                    <a href="mailto:girlscriptgoa@gmail.com">
+                        <img src="../assets/socials svg/Mail.svg" alt="" />
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

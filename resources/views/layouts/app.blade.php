@@ -8,8 +8,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- <title>{{ config('HHHH', 'Girl Script') }}</title> -->
     @yield('title')
     
 

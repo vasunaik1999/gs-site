@@ -224,7 +224,7 @@
                     </div>
                     <div class="socials facebook">
                         <a href="https://www.facebook.com/girlscriptgoa-106623521174035">
-                            <img src="../assets/socials svg/facebook.png" alt="" />
+                            <img src="../assets/socials svg/facebook icon.svg" alt="" />
                         </a>
                     </div>
                     <div class="socials mail">
@@ -246,6 +246,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
         </script>
+
 </body>
 
 </html>

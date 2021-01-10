@@ -1001,7 +1001,7 @@
                     </div>
                     <div class="socials facebook">
                         <a href="https://www.facebook.com/girlscriptgoa-106623521174035">
-                            <img src="../assets/socials svg/facebook.png" alt="" />
+                            <img src="../assets/socials svg/facebook icon.svg" alt="" />
                         </a>
                     </div>
                     <div class="socials mail">
