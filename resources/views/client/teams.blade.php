@@ -560,7 +560,7 @@
         <section>
             <h2 data-aos-duration="1000" data-aos="fade-up">Campus Heroes</h2>
             <div data-aos-duration="1000" data-aos="fade-up" class="team-container">
-                <div class="owl-carousel owl-theme team-card stop-carousel">
+                <div class="owl-carousel owl-theme team-card">
                     <div class="team-member">
                         <div class="imgc">
                             <img src="../assets/Team/Kartikey Sharma.png" alt="Kartikey Sharma" class="team-image" />
